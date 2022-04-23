@@ -1,8 +1,8 @@
 <div *ngIf="!layoutService.isMobile" class="flex flex-row justify-start">
   <div class="bg-huddy flex flex-col justify-center align-middle">
     <div class="flex flex-col justify-center align-middle gap-5">
-      <h1 *ngIf="type === 'buyer'" class=" text-white text-center text-6xl">Buy the best</h1>
-      <h1 *ngIf="type === 'seller'" class=" text-white text-center text-6xl">Sell the best</h1>
+      <h1 *ngIf="type === 'buyer'" class=" text-white text-center text-xl lg:text-6xl">Buy the best</h1>
+      <h1 *ngIf="type === 'seller'" class=" text-white text-center text-xl lg:text-6xl">Sell the best</h1>
     </div>
   </div>
   <div class="bg-white w-[40%] flex flex-row justify-center align-middle">
@@ -59,13 +59,12 @@
 <div *ngIf="layoutService.isMobile" class="flex flex-row justify-start">
   <div class="bg-huddy flex flex-col justify-center align-middle">
     <div class="flex flex-col justify-center align-middle gap-5">
-      <h1 *ngIf="type === 'buyer'" class=" text-white text-center text-6xl">Buy the best</h1>
-      <h1 *ngIf="type === 'seller'" class=" text-white text-center text-6xl">Sell the best</h1>
+      <!-- <h1 *ngIf="type === 'buyer'" class=" text-white text-center text-xl">Buy the best</h1>
+      <h1 *ngIf="type === 'seller'" class=" text-white text-center text-xl">Sell the best</h1> -->
 
       <div class="w-full h-[400px] self-center">
-        <h2 class=" text-dark text-center text-2xl">Sign In</h2>
+        <h2 class=" text-white text-center text-xl">Sign In</h2>
         <div class="mt-8">
-
           <form [formGroup]="form" class="mx-auto w-[300px] flex flex-col" (ngSubmit)="submit(form.value)">
             <span class="p-float-label my-2">
               <input placeholder="Email" id="email" class="w-full" formControlName="email" type="email" pInputText>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { LayoutService } from 'src/app/core/services/layout.service';
 
 @Component({
   selector: 'app-register',
@@ -10,7 +11,10 @@ export class RegisterComponent implements OnInit {
   type!: string;
   display: boolean = false;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private route: ActivatedRoute,
+    public layoutService: LayoutService
+  ) {}
 
   ngOnInit(): void {
     this.route.queryParams.subscribe((query) => {

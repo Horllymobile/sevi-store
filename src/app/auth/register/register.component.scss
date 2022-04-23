@@ -12,3 +12,10 @@
 .p-button{
   background-color: #0E1B35 !important;
 }
+
+@media screen and (max-width: 768px) {
+  .bg-huddy {
+    min-width: 100% !important;
+    height: 100vh;
+  }
+}

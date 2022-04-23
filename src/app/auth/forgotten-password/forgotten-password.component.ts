@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { LayoutService } from 'src/app/core/services/layout.service';
 
 @Component({
   selector: 'app-forgotten-password',
@@ -9,7 +10,10 @@ import { ActivatedRoute } from '@angular/router';
 export class ForgottenPasswordComponent implements OnInit {
   type!: string;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private route: ActivatedRoute,
+    public layoutService: LayoutService
+  ) {}
 
   ngOnInit(): void {
     this.route.queryParams.subscribe((query) => {
