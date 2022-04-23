@@ -1,0 +1,15 @@
+<div class="bg-huddy flex flex-col justify-center align-middle">
+
+  <div class="flex flex-col justify-center align-middle gap-5">
+    <h1 class=" text-white text-center text-6xl">Culés Store</h1>
+
+    <div
+      class="bg-white border rounded-lg mx-auto w-[20rem] lg:w-[24rem] h-24 border-white p-1 flex flex-row justify-center align-middle gap-4">
+      <button class="self-center hover:bg-slate-700 w-32 h-12 rounded text-white buy bg-[#0E1B35]"
+        routerLink="/auth/login" [queryParams]="{type: 'buyer'}">Buy</button>
+      <button class="self-center w-32 h-12 rounded text-white hover:bg-blue-700 bg-[#165DEA]" routerLink="/auth/login"
+        [queryParams]="{type: 'seller'}">Sell</button>
+    </div>
+  </div>
+
+</div>

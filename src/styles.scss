@@ -1,1 +1,31 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
 /* You can add global styles to this file, and also import other style files */
+@keyframes animate_bg {
+  0% {
+    background-image: url("/assets/imgs/huddy.jpeg");
+    transition: 1s;
+  }
+  50% {
+    background-image: url("/assets/imgs/wp3103216.webp");
+    transition: 1s;
+  }
+
+  70% {
+    background-image: url("/assets/imgs/huddy2.webp");
+    transition: 1s;
+  }
+
+  90% {
+    background-image: url("/assets/imgs/huddy3.jpeg");
+    transition: 1s;
+  }
+
+  100% {
+    background-image: url("/assets/imgs/huddy.jpeg");
+    transition: 1s;
+  }
+}

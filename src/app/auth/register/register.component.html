@@ -1,0 +1,58 @@
+<div class="flex flex-row justify-start">
+  <div class="bg-huddy flex flex-col justify-center align-middle">
+    <div class="flex flex-col justify-center align-middle gap-5">
+      <h1 *ngIf="type === 'buyer'" class=" text-white text-center text-6xl">Buy the best</h1>
+      <h1 *ngIf="type === 'seller'" class=" text-white text-center text-6xl">Sell the best</h1>
+    </div>
+  </div>
+  <div class="bg-white w-[40%] flex flex-row justify-center align-middle">
+    <div class="w-[500px] h-[400px] self-center">
+      <h2 class=" text-dark text-center text-2xl">Sign Up</h2>
+      <div class="mt-8 w-[400px] mx-auto">
+
+        <form class="mx-auto flex flex-col gap-8">
+
+          <span class="p-float-label">
+            <input id="name" class="w-full" type="text" pInputText>
+            <label for="name">Name</label>
+          </span>
+
+          <span class="p-float-label">
+            <input id="email" class="w-full" type="email" pInputText>
+            <label for="email">Email</label>
+          </span>
+
+          <span class="p-float-label">
+            <input id="phone" class="w-full" type="tel" pInputText>
+            <label for="phone">Phone number</label>
+          </span>
+
+          <span class="p-float-label">
+            <input id="password" class="w-full" type="text" pInputText>
+            <label for="password">Password</label>
+          </span>
+
+          <button pButton type="button" label="Login"></button>
+        </form>
+        <div class="mt-8 flex flex-row gap-2 justify-center">
+          <p-checkbox value="false" name="accept"></p-checkbox>
+          <p class="text-center text-[#0E1B35]">
+            Do you accept our <a class="text-center underline text-[#0E1B35] cursor-pointer"
+              (click)="showDialog()">Terms and Condition</a>
+          </p>
+        </div>
+        <p class="text-center text-[#0E1B35]">
+          Already have an account? <a class="text-center underline text-[#0E1B35] cursor-pointer"
+            routerLink="/auth/login" [queryParams]="{type}">Login</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p-dialog [style]="{width: '50vw'}" header="Terms and Condition" [(visible)]="display">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsum assumenda. Officiis perspiciatis numquam
+  deserunt maxime earum, voluptatum voluptatibus voluptas ad culpa laboriosam tempore quae vitae officia consequatur
+  sequi tenetur.
+  <!-- <ng-template footer></ng-template> -->
+</p-dialog>

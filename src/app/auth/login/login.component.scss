@@ -1,0 +1,39 @@
+.bg-huddy {
+  background-image: url("/assets/imgs/huddy.jpeg");
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 60%;
+  height: 100vh;
+  object-fit: cover;
+  // animation: animate_bg 8s cubic-bezier(.53,.16,.83,.67) 5s infinite reverse ;
+}
+
+.p-button{
+  background-color: #0E1B35 !important;
+  margin-top: 10px;
+}
+
+@keyframes p-progress-spinner-color {
+  100%,
+  0% {
+      stroke: #d62d20;
+  }
+  40% {
+      stroke: #0057e7;
+  }
+  66% {
+      stroke: #008744;
+  }
+  80%,
+  90% {
+      stroke: #ffa700;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bg-huddy {
+    min-width: 100% !important;
+    height: 100vh;
+  }
+}
